@@ -1,0 +1,15 @@
+[project]
+name = "robust-saliency-ranking"
+version = "0.1.0"
+
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "scikit-image",
+    "scipy",
+    "matplotlib",
+    "networkx",
+    "tqdm"
+]
