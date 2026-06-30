@@ -1,20 +1,14 @@
 from dataclasses import dataclass, field
-from typing import List, Tuple
 
 import numpy as np
 
 
 @dataclass(slots=True)
 class Node:
-    """
-    Represents one superpixel in the graph.
-    """
 
     id: int
 
-    pixel_indices: np.ndarray
-
-    centroid: Tuple[float, float]
+    centroid: tuple[float, float]
 
     mean_rgb: np.ndarray
 
@@ -24,4 +18,4 @@ class Node:
 
     boundary: bool
 
-    neighbors: List[int] = field(default_factory=list)
+    neighbors: list[int] = field(default_factory=list)
